@@ -1,3 +1,17 @@
+生成模拟apache日志的脚本
+
+https://github.com/kiritbasu/Fake-Apache-Log-Generator
+
+pip install -r requirements.txt
+
+之后
+
+生成86400条数据，每秒10条
+
+python apache-fake-log-gen.py -n 86400 -o access.log -s 0.1
+
+------
+
 # Fake Apache Log Generator
 
 This script generates a boatload of fake apache logs very quickly. Its useful for generating fake workloads for [data ingest](http://github.com/streamsets/datacollector) and/or analytics applications.
